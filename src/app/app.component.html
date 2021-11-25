@@ -1,0 +1,16 @@
+<h1> {{a}} </h1>
+<app-form (getdata)="getdataevent($event)" ></app-form>
+<div *ngFor="let time of namazTime?.data[1];" style="display: flex; margin: 0 auto; justify-content: space-between; background-color: rgb(226, 233, 233);">
+  
+  <p>Fajar: {{time.timings.Fajr}}</p>
+  <p>Sunrise :{{time.timings.Sunrise}}</p>
+  <p>Dhuhr :{{time.timings.Dhuhr}}</p>
+  <p>Asr :{{time.timings.Asr}}</p>
+  <p>Sunset :{{time.timings.Sunset}}</p>
+  <p>Maghrib :{{time.timings.Maghrib}}</p>
+  <p>Isha :{{time.timings.Isha}}</p>
+  <p>Imsak :{{time.timings.Imsak}}</p>
+  <p>Midnight :{{time.timings.Midnight}}</p>
+</div>
+
+
